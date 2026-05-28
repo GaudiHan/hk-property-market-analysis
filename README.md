@@ -27,16 +27,16 @@ psql -d hk_property -f sql/02_data_cleaning.sql
 ```
 hk-property-analysis/
 ├── sql/
-│   ├── 01_schema_setup.sql      # DDL + raw data load
-│   ├── 02_data_cleaning.sql     # NULL handling, type casts, standardisation
-│   └── 03_analysis_queries.sql  # Business-question queries (coming next)
+│   ├── 01_schema_setup.sql      # DDL + raw data load  
+│   ├── 02_data_cleaning.sql     # NULL handling, type casts, standardisation 
+│   └── 03_analysis_queries.sql  # Business-question queries
 ├── data/
-│   ├── raw/          ← gitignored; download from data.gov.hk (see docs/)
-│   └── cleaned/      ← gitignored; produced by Python pre-processing scripts
+│   ├── raw/    
+│   └── cleaned/ 
 ├── notebooks/
 │   └── 01_eda.ipynb             # Exploratory data analysis
 ├── tableau/
-│   └── hk_property.twb          # Tableau workbook (source only, not .twbx)
+│   └── hk_property.twb          # Tableau workbook
 └── docs/
     └── data_sources.md          # Download instructions & data dictionary
 ```
